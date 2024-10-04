@@ -1,7 +1,7 @@
 # LLaVa-for-Circuit-Netlist
 
 # About
-LLava has impressive multimodal capacity. In this project we try to leverage LLaVA-7b in 4 bit-quantized version to solve Electrical circuits.
+LLaVA has impressive multimodal capacity. In this project we try to leverage LLaVA-7b in 4 bit-quantized version to solve Electrical circuits.
 Here We check the circuit solving and Netlist Generation capability of LLaVA. 
 
 # Circuit Solving Capability
@@ -19,4 +19,16 @@ In this case, we have V1 = 10V, R1 = 120 Ohms, I1 = 0.5 A (since the current is 
 
 
 It is evident that it hallucinates on a circuit-solving question. So, we try to use it to generate a Netlist of the circuit which can be used to solve the circuit in SPICE programs.
+
+# Generating Netlist
+
+>Promt : "Generate a netlist for the circuit \n"
+>Output : "Here is a simplified netlist for the circuit:
+```css
+R1 = 12 ohm
+R2 = 60 ohm
+R3 = 12 ohm
+R4 = 12 ohm"
+
+
 
