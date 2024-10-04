@@ -35,7 +35,7 @@ So, the model also hallucinates on Netlist Generation task.
 
 # Finetuning model
 
-We built a small [Dataset](https://www.kaggle.com/datasets/takakib/circuit-for-llava) for finetuning LLaVA for Netlist Generation. We only used 7 images for finetuning. But it yielded quite impressive result for such a small dataset. For finetuning we used the Kaggle P-100 GPU and the following hyperparameters:
+We built a small [Dataset](https://www.kaggle.com/datasets/takakib/circuit-for-llava) for finetuning LLaVA for Netlist Generation. We only used 7 images for finetuning. But it yielded quite usuable result for such a small dataset. For finetuning we used the Kaggle P-100 GPU and the following hyperparameters:
 _model_id llava-1.5-7b, train_epochs 5, gradient_accumulation_steps 1, learning_rate 5e-4, lora_r 8, lora_alpha 32_
 
 # Get started with the model
@@ -44,8 +44,20 @@ The adapter is stored at [HuggingFace](https://huggingface.co/akibc123/llava_for
 
 # Results
 
-After finetuning we give the following circuit as input to the model
+After finetuning we give the following circuit from training as input to the model
 
 ![Question](images/c1.jpg)
 
-> Output: ![Question](images/image.png)
+> Output:
+> ![Question](images/image.png)
+
+
+
+The netlist is fine. That is because this image was in the training set. Let's test the model with a random circuit from the internet.
+![Diagram](images/8e2e3c06-8550-4591-b53f-9f67b92a8185.png)
+
+>Output:  Multiple dc sources v1 1 0 dc 24 v2 3 0 dc 12 r1 1 2 4 r2 2 3 7 r3 2 0 1
+
+There are multiple discrepancies in the output. It recognizes all the resistance and the values of them. But it gives incorrect values for Voltage Source. Lack of enough training data might be the reason for that. We'll update the repo when we can improve the result.
+
+
