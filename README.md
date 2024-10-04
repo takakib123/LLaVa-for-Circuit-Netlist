@@ -24,11 +24,13 @@ It is evident that it hallucinates on a circuit-solving question. So, we try to 
 
 >Promt : "Generate a netlist for the circuit \n"
 >Output : "Here is a simplified netlist for the circuit:
-```css
+"```css
 R1 = 12 ohm
 R2 = 60 ohm
 R3 = 12 ohm
 R4 = 12 ohm"
 
+
+So, the model also hallucinates on Netlist Generation task.
 
 
