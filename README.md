@@ -9,7 +9,7 @@ Here We check the circuit solving and Netlist Generation capability of LLaVA.
 ![Question-Answer Pair](/images/t1.png)
 
 It outputs the following:
-"
+>"
 In the image, there are two resistors, one at 120 Ohms and the other at 12 Ohms. We can determine the value of R by using the formula R = (V1 \* R1) / (I1 \* t), where V1 is the voltage across the resistor, R1 is the resistance value, I1 is the current flowing through the resistor, and t is the time for which the current flows.
 
 We can calculate the current flowing through the resistor by using the formula I = V / R, where V is the voltage across the resistor and R is the resistance value.
