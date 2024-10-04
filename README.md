@@ -48,5 +48,4 @@ After finetuning we give the following circuit as input to the model
 
 ![Question](images/c1.jpg)
 
-> Output: 
-
+> Output: ![Question](images/image.png)
