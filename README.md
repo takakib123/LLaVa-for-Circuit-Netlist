@@ -54,6 +54,7 @@ After finetuning we give the following circuit from training as input to the mod
 
 
 The netlist is fine. That is because this image was in the training set. Let's test the model with a random circuit from the internet.
+
 ![Diagram](images/8e2e3c06-8550-4591-b53f-9f67b92a8185.png)
 
 >Output:  Multiple dc sources v1 1 0 dc 24 v2 3 0 dc 12 r1 1 2 4 r2 2 3 7 r3 2 0 1
