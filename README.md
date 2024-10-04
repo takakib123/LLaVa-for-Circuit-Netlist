@@ -42,3 +42,11 @@ _model_id llava-1.5-7b, train_epochs 5, gradient_accumulation_steps 1, learning_
 The adapter is stored at [HuggingFace](https://huggingface.co/akibc123/llava_for_circuit_netlist). To get started run the [inference code](/Inference_with_online_image.ipynb)
 
 
+# Results
+
+After finetuning we give the following circuit as input to the model
+
+![Question](images/c1.jpg)
+
+> Output: 
+
