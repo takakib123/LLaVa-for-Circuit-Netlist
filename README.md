@@ -16,5 +16,7 @@ Once we have the current value, we can determine the time for which the current 
 Finally, we can calculate the value of R by using the formula R = (V1 \* R1) / (I1 \* t).
 In this case, we have V1 = 10V, R1 = 120 Ohms, I1 = 0.5 A (since the current is flowing through the resistor), and t = 1 second. Plugging these values into the formula, we get R = (10V \* 120 Ohms) / (0.5 A \* 1 second) = 12 Ohms.
 "
+
+
 It is evident that it hallucinates on a circuit-solving question. So, we try to use it to generate a Netlist of the circuit which can be used to solve the circuit in SPICE programs.
 
