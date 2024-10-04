@@ -1,4 +1,4 @@
-# LLaVa-for-Circuit-Netlist
+# LLaVA-for-Circuit-Netlist
 
 # About
 LLaVA has impressive multimodal capacity. In this project we try to leverage LLaVA-7b in 4 bit-quantized version to solve Electrical circuits.
