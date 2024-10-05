@@ -36,7 +36,7 @@ R4 = 12 ohm"
 
 So, the model also hallucinates on Netlist Generation task.
 
-# Finetuning model
+# Finetuning LLaVA-7b model
 
 We built a small [Dataset](https://www.kaggle.com/datasets/takakib/circuit-for-llava) for finetuning LLaVA for Netlist Generation. We only used 7 images for finetuning. But it yielded quite usuable result for such a small dataset. For finetuning we used the Kaggle P-100 GPU and the following hyperparameters:
 _model_id llava-1.5-7b, train_epochs 5, gradient_accumulation_steps 1, learning_rate 5e-4, lora_r 8, lora_alpha 32_
