@@ -62,6 +62,6 @@ The netlist is fine. That is because this image was in the training set. Let's t
 
 >Output:  Multiple dc sources v1 1 0 dc 24 v2 3 0 dc 12 r1 1 2 4 r2 2 3 7 r3 2 0 1
 
-There are multiple discrepancies in the output. It recognizes all the resistance and the values of them. But it gives incorrect values for Voltage Source. Lack of enough training data might be the reason for that. We'll update the repo when we can improve the result.
+The nodes in this circuit were not identified. The model generated the nodes by itself. The four nodes(including the ground) were generated successfully by the model. It recognizes all the resistance and the values of them. But it gives incorrect values for Voltage Source. Lack of enough training data might be the reason for that. We'll update the repo when we can improve the result.
 
 
